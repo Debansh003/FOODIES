@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-form">
+            <h1>Login to Order Food</h1>
+            <form action="#">
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="input-group">
+                    <label for="address1">Address Line 1</label>
+                    <input type="text" id="address1" name="address1" placeholder="Street, Building, etc." required>
+                </div>
+                <div class="input-group">
+                    <label for="address2">Address Line 2</label>
+                    <input type="text" id="address2" name="address2" placeholder="Apartment, Suite, etc.">
+                </div>
+                <div class="input-group">
+                    <label for="address3">Address Line 3</label>
+                    <input type="text" id="address3" name="address3" placeholder="City, State, Zip Code" required>
+                </div>
+                <div class="input-group">
+                    <label for="special-instructions">Special Instructions for the Chef</label>
+                    <textarea id="special-instructions" name="special-instructions" placeholder="Any preferences or allergies?" rows="3"></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="delivery-instructions">Delivery Instructions</label>
+                    <textarea id="delivery-instructions" name="delivery-instructions" placeholder="Where to deliver or any instructions for the delivery person" rows="3"></textarea>
+                </div>
+                <div class="input-group">
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

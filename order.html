@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <div class="order-container">
+        <div class="order-form">
+            <h1>Place Your Order</h1>
+            <form action="#">
+                <div class="input-group">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="cutlery">Do you need cutlery?</label>
+                    <select id="cutlery" name="cutlery" required>
+                        <option value="yes">Yes, please</option>
+                        <option value="no">No, thanks</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="delivery-time">Preferred Delivery Time</label>
+                    <input type="time" id="delivery-time" name="delivery-time" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Delivery Options</label>
+                    <div class="radio-group">
+                        <input type="radio" id="standard" name="delivery-option" value="standard" required>
+                        <label for="standard">Standard Delivery (30-45 mins)</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="express" name="delivery-option" value="express" required>
+                        <label for="express">Express Delivery (15-20 mins)</label>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <button type="submit" class="submit-btn">Order Now</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="order-graphics">
+            <img src="order.png" alt="Food Order Graphic">
+        </div>
+    </div>
+</body>
+</html>

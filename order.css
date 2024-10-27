@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.order-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.order-form {
+    width: 60%;
+}
+
+.order-form h1 {
+    color: #ff6347; /* Tomato color */
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.input-group input[type="number"],
+.input-group input[type="time"],
+.input-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #ff6347;
+}
+
+.radio-group {
+    margin-bottom: 10px;
+}
+
+.radio-group input {
+    margin-right: 10px;
+}
+
+.radio-group label {
+    font-size: 1rem;
+    color: #555;
+}
+
+.submit-btn {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #e55339;
+}
+
+.order-graphics {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-graphics img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .order-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .order-form {
+        width: 100%;
+    }
+
+    .order-graphics {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .order-graphics img {
+        width: 80%;
+    }
+}
